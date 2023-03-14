@@ -6,8 +6,9 @@ iterations = 100
 
 turtle = Turtle()
 screen = Screen()
-screen.setup(400,400)
+screen.setup(400, 400)
 turtle.shape("arrow")
+turtle.speed("fastest")
 color = ["red", "blue", "yellow", "black", "orange", "purple", "brown", "pink"]
 direction = [0, 90, 180, 270, 360]
 turtle.width(5)

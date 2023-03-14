@@ -1,22 +1,23 @@
-from turtle import Turtle, Screen
+import random
+import turtle as t
 from random import choice
-
+t.colormode(255)
 # Setting the number of iterations
 iterations = 100
 
-turtle = Turtle()
-screen = Screen()
+turtle = t.Turtle()
+screen = t.Screen()
 screen.setup(400, 400)
 turtle.shape("arrow")
 turtle.speed("fastest")
-color = ["red", "blue", "yellow", "black", "orange", "purple", "brown", "pink"]
 direction = [0, 90, 180, 270, 360]
 turtle.width(5)
+
 
 for i in range(iterations):
     turtle.setheading(choice(direction))
     turtle.forward(30)
-    turtle.color(choice(color))
+    turtle.pencolor(random.randint(1,255), random.randint(1,255), random.randint(1,255))
 
 screen.exitonclick()
 
